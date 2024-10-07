@@ -23,6 +23,11 @@ p {
 pre {
     font-size: 12px;
 }
+.source {
+    margin: 50px 0;
+    text-align: right;
+}
+
 
 /* Метод 1 */
 .p1 {
