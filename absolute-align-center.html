@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 способов выровнять элемент по центру</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Метод 1 -->
+        <div>
+            <p>Метод 1</p>
+            <div class="content">
+                <pre>
+    .p1 {
+        position: relative;
+    }
+    .c1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+                </pre>
+            </div>
+            <div class="parent p1">
+                <div class="child c1">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 2 -->
+        <div>
+            <p>Метод 2</p>
+            <div class="content">
+                <pre>
+    .p2 {
+        position: relative;
+    }
+    .c2 {
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+        margin: auto;
+    }
+                </pre>
+            </div>
+            <div class="parent p2">
+                <div class="child c2">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 3 -->
+        <div>
+            <p>Метод 3</p>
+            <div class="content">
+                <pre>
+    .p3 {
+        position: relative;
+    }
+    .c3 {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+                </pre>
+            </div>
+            <div class="parent p3">
+                <div class="child c3">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 4 -->
+        <div>
+            <p>Метод 4</p>
+            <div class="content">
+                <pre>
+    .p4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .c4 {
+
+    }
+                </pre>
+            </div>
+            <div class="parent p4">
+                <div class="child c4">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 5 -->
+        <div>
+            <p>Метод 5</p>
+            <div class="content">
+                <pre>
+    .p5 {
+        display: flex;
+    }
+    .c5 {
+        margin: auto;
+    }
+                </pre>
+            </div>
+            <div class="parent p5">
+                <div class="child c5">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 6 -->
+        <div>
+            <p>Метод 6</p>
+            <div class="content">
+                <pre>
+    .p6 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .c6 {
+        
+    }
+                </pre>
+            </div>
+            <div class="parent p6">
+                <div class="child c6">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 7 -->
+        <div>
+            <p>Метод 7</p>
+            <div class="content">
+                <pre>
+    .p7 {
+        display: grid;
+        place-items: center;
+    }
+    .c7 {
+    
+    }
+                </pre>
+            </div>
+            <div class="parent p7">
+                <div class="child c7">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 8 -->
+        <div>
+            <p>Метод 8</p>
+            <div class="content">
+                <pre>
+    .p8 {
+        display: grid;
+    }
+    .c8 {
+        align-self: center;
+        justify-self: center;
+    }
+                </pre>
+            </div>
+            <div class="parent p8">
+                <div class="child c8">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 9 -->
+        <div>
+            <p>Метод 9</p>
+            <div class="content">
+                <pre>
+    .p9 {
+        display: grid;
+    }
+    .c9 {
+        place-self: center;
+    }
+                </pre>
+            </div>
+            <div class="parent p9">
+                <div class="child c9">
+                </div>
+            </div>
+        </div>
+            <!-- Метод 10 -->
+            <div>
+                <p>Метод 10</p>
+                <div class="content">
+                    <pre>
+    .p10 {
+        display: grid;
+    }
+    .c10 {
+        margin: auto;
+    }
+                    </pre>
+                </div>
+                <div class="parent p10">
+                    <div class="child c10">
+                    </div>
+                </div>
+            </div>
+    </div> 
+</body>
+</html>
